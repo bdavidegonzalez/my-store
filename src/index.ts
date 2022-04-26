@@ -25,6 +25,10 @@ const options = {
   }
 }
 
+app.get('/', (req, res) => {
+  res.send('Hola mi server en express');
+});
+
 app.use(cors());
 
 routerApi(app);
