@@ -6,7 +6,7 @@
   "scripts": {
     "build": "tsc",
     "dev": "tsc & node .",
-    "start": "tsc -w & nodemon",
+    "start": "npm run build & node dist/index.js",
     "lint": "eslint"
   },
   "keywords": [],
