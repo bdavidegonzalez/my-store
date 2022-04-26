@@ -29,7 +29,7 @@ app.get('/', (req, res) => {
   res.send('Hola mi server en express');
 });
 
-app.use(cors());
+app.use(cors(options));
 
 routerApi(app);
 
