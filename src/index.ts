@@ -9,7 +9,7 @@ import { logErrors, errorHandler, boomErrorHandler } from './middleware/error.ha
 import cors from 'cors';
 
 const app = express()
-const port = 5000
+const port = process.env.PORT || 3000;
 
 app.use(express.json());
 
