@@ -3,11 +3,10 @@
 * my-store
 * services products
 */
-
-
-
-import { faker } from '@faker-js/faker';
+import { faker } from '@faker-js/faker'
 import  boom  from '@hapi/boom'
+import connectDB  from '../libs/database'
+
 export class ProductsService {
 	
 	products: any;
@@ -40,7 +39,9 @@ export class ProductsService {
 	}
 
 	async find() {
-		return this.products;
+		const query = 'SELECT * FROM tasks';
+		const [data, metadata] = await connectDB.query(query);
+		return data;
 	}
 
 	async findOne(id: any) {

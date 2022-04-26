@@ -7,8 +7,8 @@
 import express from 'express'
 
 import productsRouter from './products.router'
-import categoriesRouter from './products.router'
-import usersRouter from './products.router'
+import categoriesRouter from './categories.router'
+import usersRouter from './users.router'
 
 function routerApi(app: any){
     const router = express.Router()

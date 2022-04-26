@@ -60,4 +60,4 @@ router.delete('/:id', ValidatorHandler(getProductSchema, 'params'), async (req, 
 	}
 });
 
-export default router;
+export default router

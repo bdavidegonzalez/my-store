@@ -1,6 +1,11 @@
+/*
+* david gonzalez
+* my-store
+*/
+
 import Joi from 'joi'
 
-const id = Joi.string().uuid().min(3).max(15)
+const id = Joi.string().uuid()
 const name = Joi.string().alphanum().min(3).max(15)
 const price = Joi.number().integer().min(10)
 
